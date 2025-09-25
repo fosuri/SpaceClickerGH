@@ -171,7 +171,7 @@ export default function App() {
     return Math.floor(min + skewedRand * (max - min));
   };
 
-  const DISTANCE_PER_CLICK = getRandom(10, 1130, 1); //fosback
+  const DISTANCE_PER_CLICK = getRandom(10, 100, 1); //fosback
 
   const playTileAnimation = () => {
     const frames = [1, 2, 0];
