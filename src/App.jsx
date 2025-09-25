@@ -30,11 +30,11 @@ export default function App() {
   const [doubleDistanceCost, setDoubleDistanceCost] = useState(2000);
   const [isDoubleDistanceActive, setIsDoubleDistanceActive] = useState(false);
   const [doubleDistanceTimeLeft, setDoubleDistanceTimeLeft] = useState(0);
-  const [planetImage, setPlanetImage] = useState("/Planets/PNG/exoplanet.png");
+  const [planetImage, setPlanetImage] = useState("./Planets/PNG/exoplanet.png");
 
   // Загрузка уровней
   useEffect(() => {
-    fetch("/data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setLevels(data))
       .catch((err) => {
@@ -124,7 +124,7 @@ export default function App() {
   ]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setLevels(data))
       .catch((err) => {
@@ -325,7 +325,7 @@ export default function App() {
     setUpgradeCost1000(20000)
     setCurrentSkin(1)
     setCurrencyPerClick(1)
-    setPlanetImage("/Planets/PNG/exoplanet.png")
+    setPlanetImage("./Planets/PNG/exoplanet.png")
     if (levels?.length) {
       setPassengerCost(levels[0].defaultPassengerCost);
       setFuelCost1(levels[0].defaultFuelCost);
@@ -337,7 +337,7 @@ export default function App() {
   useEffect(() => {
     if (levels && planet > 1) {
       const previousLevel = levels[planet - 2];
-      setPlanetImage(previousLevel?.image || "/Planets/PNG/exoplanet.png");
+      setPlanetImage(previousLevel?.image || "./Planets/PNG/exoplanet.png");
     }
   }, [planet, levels]);
 
@@ -467,7 +467,7 @@ export default function App() {
           }}
         >
           <img
-            src={launched ? `/big rocket/svg/skins/${currentSkin}/rockewfire.svg` : `/big rocket/svg/skins/${currentSkin}/tile00${currentTile}.svg`}
+            src={launched ? `./big rocket/svg/skins/${currentSkin}/rockewfire.svg` : `./big rocket/svg/skins/${currentSkin}/tile00${currentTile}.svg`}
             alt="Rocket"
             style={{
               width: "100%",
@@ -573,7 +573,7 @@ export default function App() {
             {[1, 2, 3, 4, 5].map((skinNumber) => (
               <div className="Skin-item" key={skinNumber} onClick={() => setCurrentSkin(skinNumber)} style={{ width: 70, height: 70 }}>
                 <img
-                  src={`/big rocket/svg/skins/${skinNumber}/rockewfire.svg`}
+                  src={`./big rocket/svg/skins/${skinNumber}/rockewfire.svg`}
                   alt={`Rocket Skin ${skinNumber}`}
                   style={{
                     width: "100%",
