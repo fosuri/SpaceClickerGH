@@ -2,7 +2,7 @@
   {
     "levelId": 1,
     "name": "Planet1",
-    "image": "./Planets/PNG/moon.png",
+    "image": "/Planets/PNG/moon.png",
     "defaultPassengerCost": 10,
     "passengerCostMultiplier": 1.1,
     "defaultFuelCost": 5,
@@ -12,7 +12,7 @@
   {
     "levelId": 2,
     "name": "Planet2",
-    "image": "./Planets/PNG/dryvenuslikeplanet.png",
+    "image": "/Planets/PNG/dryvenuslikeplanet.png",
     "defaultPassengerCost": 50,
     "passengerCostMultiplier": 1.2,
     "defaultFuelCost": 10,
@@ -22,7 +22,7 @@
   {
     "levelId": 3,
     "name": "Planet3",
-    "image": "./Planets/PNG/dryhotplanet.png",
+    "image": "/Planets/PNG/dryhotplanet.png",
     "defaultPassengerCost": 190,
     "passengerCostMultiplier": 1.3,
     "defaultFuelCost": 15, 
@@ -32,7 +32,7 @@
   {
     "levelId": 4,
     "name": "Planet4",
-    "image": "./Planets/PNG/iceplanet.png",
+    "image": "/Planets/PNG/iceplanet.png",
     "defaultPassengerCost": 250,
     "passengerCostMultiplier": 1.4,
     "defaultFuelCost": 20, 
@@ -42,7 +42,7 @@
   {
     "levelId": 5,
     "name": "Planet5",
-    "image": "./Planets/PNG/machine_world.png",
+    "image": "/Planets/PNG/machine_world.png",
     "defaultPassengerCost": 340,
     "passengerCostMultiplier": 1.5,
     "defaultFuelCost": 25,
