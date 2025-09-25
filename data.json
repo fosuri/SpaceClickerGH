@@ -1,0 +1,52 @@
+[
+  {
+    "levelId": 1,
+    "name": "Planet1",
+    "image": "/Planets/PNG/moon.png",
+    "defaultPassengerCost": 10,
+    "passengerCostMultiplier": 1.1,
+    "defaultFuelCost": 5,
+    "passengerGoal": 500,
+    "distance": 1000
+  },
+  {
+    "levelId": 2,
+    "name": "Planet2",
+    "image": "/Planets/PNG/dryvenuslikeplanet.png",
+    "defaultPassengerCost": 50,
+    "passengerCostMultiplier": 1.2,
+    "defaultFuelCost": 10,
+    "passengerGoal": 1000,
+    "distance": 3000
+  },
+  {
+    "levelId": 3,
+    "name": "Planet3",
+    "image": "/Planets/PNG/dryhotplanet.png",
+    "defaultPassengerCost": 190,
+    "passengerCostMultiplier": 1.3,
+    "defaultFuelCost": 15, 
+    "passengerGoal": 2000,
+    "distance": 8000
+  },
+  {
+    "levelId": 4,
+    "name": "Planet4",
+    "image": "/Planets/PNG/iceplanet.png",
+    "defaultPassengerCost": 250,
+    "passengerCostMultiplier": 1.4,
+    "defaultFuelCost": 20, 
+    "passengerGoal": 3500,
+    "distance": 16000
+  },
+  {
+    "levelId": 5,
+    "name": "Planet5",
+    "image": "/Planets/PNG/machine_world.png",
+    "defaultPassengerCost": 340,
+    "passengerCostMultiplier": 1.5,
+    "defaultFuelCost": 25,
+    "passengerGoal": 5000,
+    "distance": 42000 
+  }
+]
